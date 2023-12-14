@@ -4,6 +4,7 @@ header {
 }
 
 .container {
+    max-width: 1920px;
     margin: auto;
     width: 80%;
     overflow: hidden;
@@ -506,4 +507,90 @@ video {
 .video-container.scrubbing .timeline,
 .timeline-container:hover .timeline {
     height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .section-block-content figure {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sticky-item a,
+    .footer-social svg {
+        font-size: larger;
+        /* or specific size in px */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header-wrapper,
+    .sticky-nav,
+    .expert-system {
+        flex-direction: column;
+    }
+
+    .section-block-content {
+        text-align: left;
+    }
+
+    .title,
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .section-block-content h1,
+    .section-block-content h2 {
+        font-size: 20px;
+    }
+
+    .section-block-content h3 {
+        font-size: 15px;
+    }
+
+    .section-block-content p,
+    .section-block-content span,
+    .section-block-content h4 {
+        font-size: 12px;
+    }
+
+    .section-block-content table,
+    th,
+    tr,
+    td {
+        font-size: 10px;
+    }
+
+    .section-block-content table {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .expert-system,
+    .sticky-nav {
+        flex-direction: row;
+    }
+
+    .part {
+        width: 90%;
+    }
+
+    .expert-system {
+        flex-direction: column;
+    }
+
+    figcaption {
+        font-size: 10px;
+    }
 }
