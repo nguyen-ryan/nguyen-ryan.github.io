@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
     </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body tabindex="-1" style="background-color: #fff;">
@@ -28,7 +29,7 @@
         <div id="main" class="app-main" tabindex="-1">
             <div class="">
                 <div class="sticky-nav-root">
-                    <div class="container">
+                    <div class="container" id="nav-bar">
                         <div class="sticky-nav">
                             <div class="sticky-item"><a href="index.html">Home</a></div>
                             <div class="sticky-item"><a href="#week1">Week 1</a></div>
@@ -48,136 +49,1097 @@
                 <div class="section-root">
                     <div class="container">
                         <div>
-                            <div id="badminton" class="part section-block-content">
-                                <h1>Badminton</h1>
-                                <span>(Vietnamese: Cầu lông | Chinese: 羽毛球 | Japanese: バドミントン)</span>
-                                <h2>"Smash, dive, laugh, repeat, win!"</h2>
-                                <p>Badminton is a fast-paced, dynamic sport that combines speed, agility, and technical
-                                    skill. Played with two or four players using racquets and a shuttlecock, badminton
-                                    is a game that can be enjoyed by people of all ages and fitness levels.
-                                    <br>
-                                    <br>
-                                    One of the things I love most about badminton is the constant movement and action.
-                                    Unlike some sports where there are periods of inactivity, badminton players are
-                                    always on their toes, reacting to the shuttlecock and making split-second decisions.
-                                    This constant physical activity is not only fun but also a great way to stay in
-                                    shape.
-                                    <br>
-                                    <br>
-                                    Beyond the physical benefits, badminton also offers a number of mental and emotional
-                                    advantages. The game requires a high level of concentration and focus, which can
-                                    help to improve mental clarity and reduce stress. Additionally, the competitive
-                                    nature of the sport can be a great way to build confidence and self-esteem.
-                                    <br>
-                                    <br>
-                                    Whether you're looking for a fun way to get exercise, challenge your mind, or simply
-                                    enjoy some friendly competition, badminton is a sport that has something to offer
-                                    everyone.
+                            <div id="week1" class="part section-block-content">
+                                <h1>Week one</h1>
+                                <span>(Vietnamese: Tuần 1)</span>
+                                <h2>"Overview"</h2>
+                                <p> - The concept of data and information <br>
+                                    - Relate the data and information into knowledge (which will then be used to make
+                                    better decision). <br>
+                                    - Introduction to information system. <br>
+                                    - Components and benefits of the Information System. <br>
+                                    - Apply these concepts to work on the real case study of the company which use
+                                    Information System to realise its benefits. <br>
+                                    -Work in a team and start forming a team.
                                 </p>
-                                <figure>
-                                    <img src="https://i.pinimg.com/564x/e7/bf/6a/e7bf6a508a457fb19525962d82487697.jpg"
-                                        alt="Lin Dan's Iconic Smash" width="50%">
-                                    <figcaption>Lin Dan's (Retired Professional Player) Iconic Smash</figcaption>
-                                </figure>
-                                <h2>Why we should play Badminton?</h2>
-                                <h3>Advantages</h3>
-                                <p>
-                                    <strong>Improves cardiovascular fitness:</strong> Badminton is a great way to get
-                                    your heart rate up and improve your cardiovascular health.
+                                <h3>Goals</h3>
+                                <p> - Distinguish data from information and describe how they are related to business
+                                    intelligence. <br>
+                                    - Name the components of an information system and define each component. <br>
+                                    - Explain what an information system is, how is supports people in their week and
+                                    adds value to an organisation.</p>
+                                <h2>"Data, Information &amp; Knowledge"</h2>
+                                <h3>The differences between data and information</h3>
+                                <p> - Data: raw facts <br>
+                                    - Information: a collection of facts organised to have additional value beyond the
+                                    facts themselves. <br><br>
+                                    Example: <br>
+                                <table>
+                                    <tr>
+                                        <th>Data</th>
+                                        <td>There are 20 PCs in-stock at the retail store.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Information</th>
+                                        <td>The store will run out of inventory in a week unless more is ordered today.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Knowledge</th>
+                                        <td>Call 800-555-2222 to order more inventory.</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <h2>"Business Intelligence (BI)"</h2>
+                                <h3>What it is?</h3>
+                                <p>Delivering relevant and reliable information to the right people to the right place
+                                    at the right time.</p>
+                                <h3>Goal?</h3>
+                                <p>To achieve better decision faster.</p>
+                                <h3>How can I do that?</h3>
+                                <p>Requires methods &amp; programs -&gt; collect and structure data <br>
+                                    --(convert)-&gt; information</p>
+                                <p> - BI takes the vast amount of data generated by businesses and presents in a
+                                    meaningful and actionable way. <br>
+                                    - BI contains: <br>
+                                    + Performance management. <br>
+                                    + Analytics. <br>
+                                    + Predictive modelling. <br>
+                                    + Data &amp; Text Mining. <br>
+                                    + etcetera <br>
+                                    - Making the data organised --&gt; BI Systems. <br>
+                                    - Being able to run analytical reports more easily. <br>
+                                    - BI is a set of tools and techniques that can analyse data to make better
+                                    decision-making for the business.</p>
+                                <h2>"Information Systems"</h2>
+                                <h3>What is Information System?</h3>
+                                <p>Information system is a set of interrelated components that collect, manipulate, and
+                                    disseminate data and information, and provide feedback to meet an objective.</p>
+                                <p> - Information Systems play an important role in today's businesses and society.
                                     <br><br>
-                                    <strong>Increases muscle strength and endurance:</strong> The constant movement
-                                    involved in badminton helps to build muscle strength and endurance.<br><br>
-                                    <strong>Improves coordination and agility:</strong> Badminton requires quick
-                                    reflexes and good hand-eye coordination. Playing regularly can help to improve these
-                                    skills.<br><br>
-                                    <strong>Reduces stress and anxiety:</strong> The physical activity involved in
-                                    badminton can help to release endorphins, which have mood-boosting effects.<br><br>
-                                    <strong>Improves mental focus and concentration:</strong> Badminton requires players
-                                    to be mentally focused in order to anticipate the opponent's shots and react
-                                    quickly.<br><br>
-                                    <strong>Fun and social:</strong> Badminton is a great way to meet new people and
-                                    make friends. It can be played indoors or outdoors, making it a convenient activity
-                                    for people of all ages and fitness levels.
+                                    - Examples: <br>
+                                    + POS System <br>
+                                    + Paypal <br>
+                                    + ATM Machine <br>
+                                    + Opal System <br>
+                                    + E-Commerce <br>
+                                    + etc
                                 </p>
-                                <h4>For more information, please visit</h4>
+                                <h3>Computer-based Information System</h3>
                                 <p>
-                                    <strong>Badminton World Federation: </strong><a target="_blank"
-                                        href="https://bwfbadminton.com/">https://bwfbadminton.com/</a><br>
-                                    <strong>Badminton England: </strong><a target="_blank"
-                                        href="https://badmintonengland.co.uk/">https://badmintonengland.co.uk/</a><br>
-                                </p>
+                                    1. Hardware <br>
+                                    2. Software <br>
+                                    3. Telecommunications <br>
+                                    4. People <br>
+                                    5. Database <br>
+                                    6. Procedures</p>
+                                <h3>POS System</h3>
+                                <p>
+                                    + Input: Product ID. <br>
+                                    + Process: System calculates the total price of the product. <br>
+                                    + Output: Receipt is printed out with the price of the product.</p>
+
                             </div>
-                            <div id="football" class="part section-block-content">
-                                <h1>Football (Alias: Soccer)</h1>
-                                <span>(Vietnamese: Bóng Đá | Chinese: 足球 | Japanese: フットボール)</span>
-                                <h2>"Kick, score, cheer, leap, victory!"</h2>
-                                <p>Football, also known as soccer in many parts of the world, is the most popular sport
-                                    on the planet. It's a game of passion, skill, and teamwork, played by millions of
-                                    people worldwide.
-                                    <br><br>
-                                    I've been captivated by football ever since I was a child. There's something magical
-                                    about the way 22 players can move fluidly across a field, strategizing and executing
-                                    plays with precision. The suspenseful build-up to a potential goal and the
-                                    electrifying roar of the crowd when it finally happens are emotions I can never get
-                                    enough of.
-                                    <br><br>
-                                    But beyond the thrill of competition, football offers a wealth of benefits for both
-                                    the body and mind.
+                            <div id="week2" class="part section-block-content">
+                                <h1>Week two</h1>
+                                <span>(Vietnamese: Tuần 2)</span>
+                                <h2>"Overview"</h2>
+                                <p>This week will introduces the different levels and functional areas of organisation.
+                                    <br>
+                                    This is to relate each organisational level and each functional area into different
+                                    types of Information Systems to be used by people in an organisation. Major types of
+                                    Information Systems will then be introduced with benefits.
                                 </p>
+                                <h3>Goals</h3>
+                                <p> - Identify and describe the organisational levels and functional areas. <br>
+                                    - Describe how each type of information systems can be used to support different
+                                    organisational level and functional areas. <br>
+                                    - Discuss why each type of information systems are essential to organisations.</p>
+                                <h4>In the tutorials, these concepts will be applied to work on the exercise to select
+                                    appropriate types of Information Systems for different scenarios.</h4>
+                                <h2>"Organisational Levels and its functions"</h2>
+                                <h3>The organisational pyramid</h3>
                                 <figure>
-                                    <img src="https://i.pinimg.com/564x/5c/85/e0/5c85e05545b86d56d1ac269986e52b63.jpg"
-                                        alt="David Beckham" width="50%">
-                                    <figcaption>David Beckham's (Retired Professional Player) Iconic Pose</figcaption>
+                                    <img src="images/organisational-pyramid.jpg" alt="Organisational Pyramid">
+                                    <figcaption>Fig 2.1 - Organisational Pyramid.</figcaption>
                                 </figure>
-                                <h2>Why we should play Football?</h2>
-                                <h3>Physical benefits</h3>
-                                <p>
-                                    <strong>Cardiovascular health:</strong> The constant running, jumping, and changing
-                                    direction involved in football make it a fantastic workout for your heart and
-                                    lungs.<br><br>
-                                    <strong>Muscle strength and endurance:</strong> Football requires a great deal of
-                                    physical strength and stamina. Playing regularly can help build muscle and improve
-                                    endurance.<br><br>
-                                    <strong>Coordination and agility:</strong> Football players need excellent
-                                    coordination and agility to control the ball and react quickly to changing
-                                    situations.<br><br>
-                                    <strong>Flexibility:</strong> The dynamic movements involved in football help
-                                    improve flexibility and range of motion.
+                                <h2>"TPS &amp; MIS"</h2>
+                                <h3>What is a transaction?</h3>
+                                <p>A transaction is any business-related exchange. <br> <br>
+                                    - Examples: <br>
+                                    + Credit sale to a customer <br>
+                                    + Lender borrowing <br>
+                                    + Investments <br>
+                                    + Cash transactions <br>
+                                    + etcetera</p>
+                                <h3>Transaction Processing System (TPS)</h3>
+                                <p> - A transaction processing system is an organised collection of people, procedures,
+                                    data-based and devices used to record completed business transactions. <br>
+                                    - Used at operational level. <br>
+                                    - Goals: <br>
+                                    + To automate boring, repetitive tasks. <br>
+                                    + To extract data for processing, storage and further use by other system. <br>
+                                    + Minimise errors.
                                 </p>
+                                <h3>Management Information System (MIS)</h3>
+                                <p> - A transaction processing system is an organised collection of people, procedures,
+                                    data-based and devices used to provide routine information for managers and
+                                    decision-makers. <br>
+                                    - Management Information System typically provide standard reports generated with
+                                    data and information from TPS. </p>
+                                <table style="table-layout: fixed;">
+                                    <tr>
+                                        <th>Input</th>
+                                        <th>Process</th>
+                                        <th>Output</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Transactions</td>
+                                        <td></td>
+                                        <td>Scheduled reports</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: center;">MIS</td>
+                                        <td>Demanded reports</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other internal data</td>
+                                        <td></td>
+                                        <td>Exception reports</td>
+                                    </tr>
+                                </table>
+                                <h4>MISs are used in all functional areas of the business!</h4>
+                                <h3>Examples of MIS from ouput of TPS</h3>
+                                <table>
+                                    <tr>
+                                        <th>Quantity</th>
+                                        <th>Item</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1.4 Kg</td>
+                                        <td>Bananas @ $3.99 </td>
+                                        <td>$5.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Golden Circle pineapple</td>
+                                        <td>$3.95</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Arnott's Mint Slice @ $2.99</td>
+                                        <td>$5.98</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Total</td>
+                                        <td>$15.52</td>
+                                    </tr>
+                                </table>
+                                <div id="mis-chart-example"
+                                    style="width:100%; height: max-content; margin: auto; text-align: center; padding-top: 20px;">
+                                    <script>
+                                        const xArray = ["Bondi", "Congee", "Redfern", "Starthfield", "Burwood"];
+                                        const yArray = [3.2, 1.8, 2.9, 4.3, 4.1];
+                                        const data = [{
+                                            x: xArray,
+                                            y: yArray,
+                                            type: "bar",
+                                            orientation: "v",
+                                            marker: { color: "rgba(0,0,0,0.8)" },
+                                        }];
 
-                                <h3>Mental benefits</h3>
-                                <p>
-                                    <strong>Stress relief:</strong> The physical activity and focus required in football
-                                    can be a great way to relieve stress and anxiety.<br><br>
-                                    <strong>Mental focus and concentration:</strong> Football players need to be able to
-                                    focus on the game and make quick decisions. Playing regularly can help improve
-                                    mental focus and concentration.<br><br>
-                                    <strong>Teamwork and cooperation:</strong> Football is a team sport, and it teaches
-                                    valuable lessons about teamwork, cooperation, and communication.<br><br>
-                                    <strong>Self-confidence:</strong> Scoring a goal, making a game-saving tackle, or
-                                    simply contributing to a team win can significantly boost your self-confidence.
-                                </p>
+                                        const layout = {
+                                            xaxis: { title: "Location" },
+                                            yaxis: { rage: [0, 4.5], title: "$ Million" },
+                                        };
 
-                                <h3>Social benefits</h3>
-                                <p>
-                                    <strong>Making friends:</strong> Football is a great way to meet new people and make
-                                    friends who share your passion for the game.<br><br>
-                                    <strong>Building community:</strong> Football can help build strong communities by
-                                    bringing people together through a shared love of the sport.
+                                        Plotly.newPlot("mis-chart-example", data, layout);
+                                    </script>
+                                </div>
+                                <h2>"DSS &amp; Expert System"</h2>
+                                <h3>Decision Support System (DSS)</h3>
+                                <p>The focus of a DSS is on decision-making effectiveness. A DSS can provide
+                                    immediate assistance in solving complex problems the were not supported by a
+                                    traditional MIS. Allow managers and knowledge workers to consider alternative
+                                    solutions to a problem via "what if" analysis.</p>
+                                <figure>
+                                    <img src="images/dss.jpg" alt="DSS System">
+                                    <figcaption>Fig 2.2 - Decision Support System.</figcaption>
+                                </figure>
+                                <h3>Expert Systems</h3>
+                                <p>In addition to TPS, MIS, DSS, organisations often use special systems such as
+                                    artificial intelligence systems.</p>
+                                <figure>
+                                    <img src="images/es.jpg" alt="Artificial Intelligence">
+                                    <figcaption>Fig 2.3 - The major elements of artificial intelligence.</figcaption>
+                                </figure>
+                                <p> - Mimic expertise and knowledge of experts rather than simply manipulate
+                                    information. <br>
+                                    - Matches user questions and answers to expertise in knowledge base.</p>
+                                <div class="expert-system">
+                                    <table>
+                                        <td> - Medical diagnosis <br>
+                                            - Help desk <br>
+                                            - Financial planning <br>
+                                            - Car diagnosis <br>
+                                            - Credit card approval</td>
+                                    </table>
+                                    <figure>
+                                        <img src="images/es-1.jpg" alt="example">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div id="week3" class="part section-block-content">
+                                <h1>Week three</h1>
+                                <span>(Vietnamese: Tuần 3)</span>
+                                <h2>"Overview"</h2>
+                                <p>This week, we will introduce you to the concept of human-computer synergy,
+                                    stakeholders and rich picture.</p>
+                                <h3>Goals</h3>
+                                <p> - Illustrate human-computer synergy with an example. <br>
+                                    - Discuss the participation of stakeholders in information systems. <br>
+                                    - Express stakeholder interests using rich pictures. <br>
+                                    - Discuss how to work effectively in teams.</p>
+                                <h2>"Human-computer synergy"</h2>
+                                <p>In good systems design, we build a synergy between humans and computers.</p>
+                                <h3>Questions to think about: </h3>
+                                <p> - Should a person search for an IS book manually? <br>
+                                    Should a robot nurse take care of a patient in critical condition?</p>
+                                <table>
+                                    <tr>
+                                        <th>What people do best</th>
+                                        <th>What computers do best</th>
+                                    </tr>
+                                    <tr>
+                                        <td> - think intuitively <br>
+                                            - use common sense <br>
+                                            - think in context <br>
+                                            - decide when faced with uncertainty <br>
+                                            - think strategically <br>
+                                            - accumulate expertise <br>
+                                            - feel <br>
+                                            - make moral and aesthetic judgement <br>
+                                            - use and play with language</td>
+                                        <td> - calculate and compare <br>
+                                            - store and retrieve data <br>
+                                            - do complex operations with numbers <br>
+                                            - perform statistical analysis <br>
+                                            - perform tedious and repetitive tasks</td>
+                                    </tr>
+                                </table>
+                                <h3 style="padding-top: 20px;">Good Human-Computer Synergy vs Lack of Synergy</h3>
+                                <p> - Good: using the computer to search for articles. <br>
+                                    - Bad: using robots to take care of seniors at the nursing home.</p>
+                                <h2>"Stakeholder analysis"</h2>
+                                <p>System stakeholder is anyone who will be affected by a system development project and
+                                    has a direct or indirect influence on the system requirements.</p>
+                                <h3>Examples of stakeholders</h3>
+                                <p> - users <br>
+                                    - owners <br>
+                                    - managers and other staff, who will run the system <br>
+                                    - supplier <br>
+                                    - regulators <br>
+                                    - competitors <br>
+                                    - interested group: government, environmentalist, etcetera.</p>
+                                <h4>Identifying Stakeholders, their interests, concerns and interaction with the system
+                                    and with other stakeholders</h4>
+                                <h2>"Rich Picture"</h2>
+                                <p>Stakeholders in a system (not necessarily a computer system) <br>
+                                    - Their interest in the system: What they hope to gain from a new system. <br>
+                                    - Their concerns in the system: what they fear from the implementation of a new
+                                    system. <br>
+                                    - Interactions between stakeholders (agree and conflicts) and the system.</p>
+                            </div>
+                            <div id="week4" class="part section-block-content">
+                                <h1>Week four</h1>
+                                <span>(Vietnamese: Tuần 4)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Identify various business processes and discuss their importance to organisations.
+                                    <br>
+                                    - Discuss the importance of modelling business processes and be able to model major
+                                    business processes of an organisation. <br>
+                                    - Describe the role of information systems in different functional areas and how to
+                                    improve business processes usign computer-based information systems.
                                 </p>
-                                <p>Whether you're a seasoned player or just starting out, football is a sport that has
-                                    something to offer everyone. If you're looking for a fun, challenging, and rewarding
-                                    way to stay active and connect with others, give football a try. You might just
-                                    discover your new favorite activity!</p>
-                                <h4>For more information, please visit</h4>
-                                <p>
-                                    <strong>FIFA: </strong><a target="_blank"
-                                        href="https://www.fifa.com/inside">https://www.fifa.com/inside</a><br>
-                                    <strong>UEFA: </strong><a target="_blank"
-                                        href="https://www.uefa.com/">https://www.uefa.com/</a><br>
-                                    <strong>CONCACAF: </strong><a target="_blank"
-                                        href="https://www.concacaf.com/">https://www.concacaf.com/</a>
+                                <h3>Topics</h3>
+                                <p> - Business processes <br>
+                                    - The importance of business processes to organisations <br>
+                                    - Business process modelling</p>
+                                <h2>"Business Process"</h2>
+                                <p>A business process is a standardised set of activities, that a accomplishses a
+                                    specific task, such as processing a customer's orders. it includes manual
+                                    procedures, work practice, and policies, executed to accomplish a business
+                                    objective.
                                 </p>
+                                <h3>Some common business processes include:</h3>
+                                <p> - place an order <br>
+                                    - recruit a staff <br>
+                                    - hire the employees <br>
+                                    - enrollment <br>
+                                    - create timetable <br>
+                                    - create invoice <br>
+                                    - deliver the products</p>
+                                <h3>Functional business area:</h3>
+                                <p>Processes span functional business area in an organisation</p>
+                                <figure>
+                                    <img src="images/functional-business-area.png" alt="Functional business areas">
+                                    <figcaption>Figure 4.1 - Fuctional business areas.</figcaption>
+                                </figure>
+                                <h2>"Business Process Improvement"</h2>
+                                <h3>An example of the need for process improvement:</h3>
+                                <p>Customers waiting in line at a supermarket checkout to checkout the products with the
+                                    cashier. Waiting in line at a supermarket is an example of the need for process
+                                    improvement. In this case, the process is "checkout" and the purpose is to pay for
+                                    and bag products.</p>
+                                <p>The process begins when a customer steps into line and ends when customer receives
+                                    the receipt and leave the store.</p>
+                                <h3>Examine the existing business process</h3>
+                                <h4>Business process: </h4>
+                                <p>Customers waiting in line at a supermarket checkout the products with the cashier.
+                                    <br><br>
+                                    Examining the existing business process by: <br>
+                                    - Determine bottleneck (The process takes too long to complete) <br>
+                                    - Identify the possible errors. <br><br>
+                                    To stay competitive, organisations must optimise and automate their business
+                                    processes.
+                                </p>
+                                <h4>"A system analyst needs to understand what happens in a business operation, so that
+                                    he/she can judge the effects of the processes to the business in order to achieve
+                                    improvements in speed, quality, and customer satisfaction."</h4>
+                                <h3>"Improved process" means "Improved business"</h3>
+                                <p>Business processes must help to satisfy the following business objectives: <br>
+                                    - Achieve the result at minimum cost. <br>
+                                    - Achieve the result at maximum effect. <br>
+                                    - Avoid unnecessary errors. <br>
+                                    - Add value to the organisation. <br>
+                                    - be enjoyable or satisfying for employees or customers to complete.</p>
+                                <h2>"Swimlane Diagram"</h2>
+                                <h3>Benefits of Business Process Improvement</h3>
+                                <p> - Improved efficiency <br>
+                                    - Improved productivity <br>
+                                    - Reduced operational costs <br>
+                                    - Improved customer service</p>
+                            </div>
+                            <div id="week5" class="part section-block-content">
+                                <h1>Week five</h1>
+                                <span>(Vietnamese: Tuần 5)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Describe and identify different kinds of information needs within an organisation.
+                                    <br>
+                                    - Gather information requirements from users working a different levels and
+                                    functional areas of an organisation.
+                                </p>
+                                <h2>"Information needs and its importance"</h2>
+                                <h3>Information needs</h3>
+                                <p> - Information needs are set up processed data (i.e. product,customer,
+                                    sales,supplier,
+                                    sale report, employee performance report, cetera) <br>
+                                    - Knowing which information are used by the users in an organisation help to build
+                                    the suitable features in information system.</p>
+                                <h3>Information needs in organisation</h3>
+                                <p>Organisational dimensions of information include: <br>
+                                    - information flows <br>
+                                    - information granularity: <br>
+                                    The extent to which a larger entity is subdivided, or the extent to which groups of
+                                    smaller indistinguishable entities have joined to become a larger distinguishable
+                                    entities <br>
+                                    - what information describes <br>
+                                    - how information is used</p>
+
+                                <h2>"Information needs in an organisation"</h2>
+                                <h3>Information needs in an organisation</h3>
+                                <figure>
+                                    <img src="images/organisational-pyramid.jpg" alt="">
+                                </figure>
+                                <p>Identify information needs for people working at different organisational levels of
+                                    an organisation.</p>
+                                <h3>Level of business</h3>
+                                <table>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Who They Are</th>
+                                        <th>What They Do</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Strategic</td>
+                                        <td>CEO, Executives, Board of Directors</td>
+                                        <td>Monitor business environment and develop long-term strategic plans</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Management</td>
+                                        <td>Managers of functional areas</td>
+                                        <td>Translate strategic plans into practice within their area</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Knowledge</td>
+                                        <td>Engineers, designers, database administrators</td>
+                                        <td>Support knowledge workers to help organisations integrate new knowledge into
+                                            the business</td>
+                                    </tr>
+                                    <tr>
+                                        <td>operational</td>
+                                        <td>Supervisors, clerks, service workers</td>
+                                        <td>Support and run day-to-day activities, decisions focused on work in hand
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <h3 style="margin-top: 20px;">Levels of business - Decision they make</h3>
+                                <table>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Decision they make</th>
+                                        <th>Information Needs</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Strategic</td>
+                                        <td>Will we launch the Internet Banking?</td>
+                                        <td>Summary annual report on numbers of customers who use each transaction
+                                            (transfer money, open the new account). <br>
+                                            Summary annual report on the profits gain by competitors who use Internet
+                                            Banking.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Management</td>
+                                        <td>How can we market Internet Banking?</td>
+                                        <td>Summary report on the possible tools and their expenses on marketing
+                                            Internet Banking.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Knowledge</td>
+                                        <td>How to secure information on customers and account transactions?</td>
+                                        <td>Information on the techniques/how to use/cost/benefits in securing the
+                                            customers and account transactions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Operational</td>
+                                        <td>What answer will I give to this question?</td>
+                                        <td>List of FAQs</td>
+                                    </tr>
+                                </table>
+                                <h2>"Identifying Information Needs"</h2>
+                                <p> - Different stakeholders have different information needs. <br>
+                                    - Get the right information needs for the right people in an organisation. <br>
+                                    - Take one type of information, identify its characteristics and show with sample
+                                    data.</p>
+                                <h3>Example: Fitness First</h3>
+                                <table>
+                                    <tr>
+                                        <th>Type of Information</th>
+                                        <th>Who needs the information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Location</td>
+                                        <td>Member, Manager</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fitness program</td>
+                                        <td>Member, Trainer, Manager</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Membership</td>
+                                        <td>Member, Employee</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th>Location ID</th>
+                                        <th>Street Address</th>
+                                        <th>Suburb</th>
+                                        <th>City</th>
+                                        <th>Contact Number</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>100 Barangaroo Avenue</td>
+                                        <td>Barangaroo</td>
+                                        <td>Sydney</td>
+                                        <td>8362-8800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>100 Spring St</td>
+                                        <td>Bondi</td>
+                                        <td>Sydney</td>
+                                        <td>1300-557-799</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div id="week6" class="part section-block-content">
+                                <h1>Week six</h1>
+                                <span>(Vietnamese: Tuần 6)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Discuss several reasons to initiate a system development project. <br>
+                                    - Out line how information systems are built traditionally with the System
+                                    Development Life Cycle. <br>
+                                    - Identify the key participants in the system development process and discuss their
+                                    roles.</p>
+                                <h2>"Initiating system development"</h2>
+                                <h3>Introduction</h3>
+                                <p>Have you ever wondered why businesses develop information systems in the first place,
+                                    or how they know when it is the time to replace an old information system? <br><br>
+                                    Systems development project may be initiated for a number of reasons. Can you think
+                                    of some of those reasons?</p>
+                                <h3>Initiating System Development</h3>
+                                <p>System development projects maybe initiated for a number of reasons, including: <br>
+                                    - problems with existing system <br>
+                                    - increasing competition <br>
+                                    - to make effective use of technologies <br>
+                                    - organisational growth <br>
+                                    - change in market or external environment</p>
+                                <h3>System development</h3>
+                                <p>System development is the activity of creating or modifying existing business
+                                    systems. <br>
+                                    Each year, billions of dollars are spent on the acquisition of information systems.
+                                    <br>
+                                    Effective system development requires a team effort and it starts with careful
+                                    planning.
+                                </p>
+                                <h2>"System Development Life Cycle (SDLC)"</h2>
+                                <p>SDLC is a traditional method used by many system analyst to help them in the
+                                    development of a system. <br>
+                                    - This methodology gives a step-by-step guide of what must be done in the process of
+                                    developing a large system. The main idea of this is help system analyst to keep
+                                    track of their progress, carefully planning and ensuring things are done in order.
+                                </p>
+                                <h3>The SDLC</h3>
+                                <figure>
+                                    <img src="images/sdlc.jpg" alt="SDLC">
+                                    <figcaption>Fig 6.1 - System Development Life Cycle.</figcaption>
+                                </figure>
+                                <h3>Investigation</h3>
+                                <p>In this stage, potential problems and opportunities are identified.</p>
+                                <h3>Analysis</h3>
+                                <p>This stage involves the study of existing systems and work processes to identify
+                                    strengths, weaknesses, and opportunities for improvement.</p>
+                                <h3>Design</h3>
+                                <p>The purpose of system design is to answer the question "How will the information
+                                    system solve a problem?" <br>
+                                    - Logical Design represents the logic nature of a system - what talks the system is
+                                    doing. <br>
+                                    - Physical design tells us where, how, and by whom a system's process are
+                                    accomplished.</p>
+                                <h3>Implementation</h3>
+                                <p>System implementation consists of creating and acquiring the various system
+                                    components and integrating the new or modified system into operation.</p>
+                                <p>This phase includes: <br>
+                                    - coding <br>
+                                    - testing &amp; debugging <br>
+                                    - training <br>
+                                    - hardware acquisition and installation <br>
+                                    - site and data preparation <br>
+                                    - documentation</p>
+                                <h3>Maintenance</h3>
+                                <p>Maintenance involves checking, changing, modifying the system to make it more useful
+                                    to achieve user and organisational goals.</p>
+                                <h2>"Participating in system development"</h2>
+                                <p>The development team usually consists of stakeholders, users, managers, special
+                                    systems development specialist, and various other support personnel.</p>
+                                <table>
+                                    <tr>
+                                        <td>Stakeholders</td>
+                                        <td>individuals who will be affected by a systems development project.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Users</td>
+                                        <td>individuals who interacts with the systems regularly, they are mostly the
+                                            stakeholders of the information system as well.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-System analyst <br>-Business analyst</td>
+                                        <td>a professional who specialise in analysing and designing business systems.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programmer</td>
+                                        <td>the individuals responsible for modifying or developing programs to satisfy
+                                            user requirements.</td>
+                                    </tr>
+                                </table>
+                                <h3 style="margin-top: 20px;">The role of system analyst</h3>
+                                <p>System analyst play various roles while interacting with the stakeholders and users,
+                                    management, vendors, and suppliers, external companies, software programmers, and
+                                    other IT support personnel.</p>
+                                <figure>
+                                    <img src="images/system-analyst.png" alt="system analyst">
+                                </figure>
+                            </div>
+                            <div id="week7" class="part section-block-content">
+                                <h1>Week seven</h1>
+                                <span>(Vietnamese: Tuần 7)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Understand the concepts of requirements <br>
+                                    - Describe, identify, and classify user requirements <br>
+                                    - Discuss the methods of gathering requirements from users</p>
+                                <h2>"User requirements"</h2>
+                                <h3>Definition</h3>
+                                <p>User requirements are what the users expect the system would do for them. Since
+                                    systems are created based on what users want, users plays an important role in
+                                    system analysis by collaborating with system analyst to get the right user
+                                    requirements.</p>
+                                <h3>Classifications of the user requirements</h3>
+                                <p>User requirements are classified to: </p>
+                                <table>
+                                    <tr>
+                                        <td>Essential</td>
+                                        <td>The customers must be able to pay by credit card when using an online
+                                            ordering system.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Desirable</td>
+                                        <td>The customers should be able to join a membership to get discount when using
+                                            an online ordering system.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luxury</td>
+                                        <td>The customers should be able to virtually try on the clothes when using an
+                                            online ordering system.</td>
+                                    </tr>
+                                </table>
+                                <h3 style="margin-top: 20px;">Examples of poorly written user requirements</h3>
+                                <p> - The user may be able to view the customer record. <br>
+                                    - The user might need to enter password to login to the system. </p>
+                                <h2>"Interview"</h2>
+                                <h3>When do you need to interview</h3>
+                                <p> - When you or the users are unsure of the requirements. <br>
+                                    - Before you start designing the system throughout SDLC. <br>
+                                    - To use responses to further design the survey questions. <br>
+                                    - When the time is allowed and have limited numbers of respondents (usually
+                                    10-&gt;20 respondents)</p>
+                                <h3>Steps of a successful interview:</h3>
+                                <p> - Selecting appropriate sample and individual to interview. <br>
+                                    - Preparing for the interview questions. <br>
+                                    - Conducting the interview. <br>
+                                    - Following up on the interview. <br>
+                                    - Obtain the responses <br>
+                                    - Double check the correctness of responses with the interviewees. <br>
+                                    - Interpret the responses. </p>
+                                <h3>Questions types</h3>
+                                <h4>Open-ended:</h4>
+                                <p>Allows respondents open options for the responding. <br>
+                                    <strong>Example: </strong> "What are your positive experiences in using NetBank?",
+                                    "Why do you use the Opal System?"
+                                </p>
+                                <h4>Close-ended</h4>
+                                <p>Limit the options the respondents has to answer the question. <br>
+                                    <strong>Example: </strong> "How many times do you login to NetBank daily?" <br>
+                                    The answer can only be 1time, 2-5 times, more than 5 times.
+                                </p>
+                                <h2>"Survey"</h2>
+                                <p>Inspect via questionnaires to discover issues and requirements.</p>
+                                <h3>When do we use survey</h3>
+                                <p>- When people in the organisation are widely dispersed, involve many organisations,
+                                    many departments, etcetera. <br>
+                                    - When many people are involved with the system. <br>
+                                    - When the analyst wants to: <br>
+                                    + get general opinion <br>
+                                    + verify information regarding interview responses <br>
+                                    + further gain more information from more respondents after obtaining the interview
+                                    responses. <br>
+                                    + the respondents have shorter time to answer. <br>
+                                    - The survey can be done online and respondents can answer the questions
+                                    anonymously, allow more flexibility in terms of time/place to answer the questions.
+                                </p>
+                                <h3>Drawbacks</h3>
+                                <p>- Return rate can be poor <br>
+                                    - To prepare a good survey analyst needs to know as much about the topic as the user
+                                    (and therefore clear survey purpose is need) <br>
+                                    - Can be boring for the respondents if there are many numbers of questions and/or
+                                    the long question contents. <br>
+                                    - If paper based survey is conducted, may get incomplete answers (Incomplete answers
+                                    cannot be used for further analysis). <br>
+                                    - Need follow-up process for online survey </p>
+                                <h2>"Observation"</h2>
+                                <p>Observing workers at selected times to see how data are handled and what information
+                                    people need to do their jobs, what are the difficulties in performing the jobs.</p>
+                                <h3>When to use</h3>
+                                <p> - When the analyst needs to get "the big picture". <br>
+                                    - Where a system is particularly complex. <br>
+                                    - Where the respondents have given conflicting information in the interview. <br>
+                                    - When the respondents are unable to articulate/explain. <br>
+                                    - To gain insight information of what exactly happening in the workplace.</p>
+                                <h3>Disadvantages</h3>
+                                <p>- Users don't get input into your thoughts - sometimes they feel frustrated. <br>
+                                    - Hawthorn effect - users don't act as they normally would. <br>
+                                    - Takes a lot of time. <br>
+                                    - Not easy to gain access to the workplace. <br>
+                                    - Users may resent the intrusion (e.g privacy issues) <br>
+                                    - Written report is needed during the observation (if the record isn't permitted)
+                                </p>
+                                <h2>"Form and report gathering"</h2>
+                                <p>It is essential in each system to gather all of the forms currently in use. <br><br>
+                                    This allows a cross check for the data requirements and a useful starting block for
+                                    forms design and testing.</p>
+                                <h4>Use this method in conjunction with other methods.</h4>
+                            </div>
+                            <div id="week8" class="part section-block-content">
+                                <h1>Week eight</h1>
+                                <span>(Vietnamese: Tuần 8)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Define use cases <br>
+                                    - Prepare effective use cases <br>
+                                    - Demonstrate knowledge through practical examples.</p>
+                                <h2>"Use cases and the benefits"</h2>
+                                <p>A use case describes what a system does from user's perspectives.</p>
+                                <h3>Benefits of use cases</h3>
+                                <p> - capture requirements from users's perspective. <br>
+                                    - Give a clear and consistent description of what the system should do. <br>
+                                    - Comprehensible by all stakeholders. <br>
+                                    - Serve as a critical tool in the analysis, design, implementation and testing
+                                    process.</p>
+                                <h3>Use cases description</h3>
+                                <p>The set of use case description specifies the complete functional requirements of a
+                                    system. <br>
+                                    - Things to take note: <br>
+                                    + Use cases are requirements - but not all of the requirements. <br>
+                                    + Use cases are not easy to draw and write - but there are techniques to make your
+                                    job easy.
+                                </p>
+                                <h2>"Use case diagram"</h2>
+                                <h3>Use case model</h3>
+                                <p> A use case model consists of four major elements: <br>
+                                    - <strong>System:</strong> the system described. <br>
+                                    - <strong>Actors:</strong> entities that the system interacts with. <br>
+                                    - <strong>Use cases:</strong> services that the system performs. <br>
+                                    - <strong>Relationships:</strong> relationships with other elements.</p>
+                                <h3>Actors</h3>
+                                <p> - Are entities which interact with the system. <br>
+                                    - An actor can carry out many different operations.</p>
+                                <h3>Use cases</h3>
+                                <p> - Each operation or task is a separate use case. <br>
+                                    - Participate in relationship with other use cases.</p>
+                                <h3>Graphical Notation - Use Case</h3>
+                                <figure>
+                                    <img src="images/use-case-annotation.png" alt="Use Case Annotation">
+                                    <figcaption>Fig 8.1 - Use Case Annotations.</figcaption>
+                                </figure>
+                                <h3 style="margin-top: 20px;">Example</h3>
+                                <figure>
+                                    <img src="images/use-case-diagram.png" alt="Use case diagram">
+                                    <figcaption>Fig 8.2 - An example of a Use Case Diagram</figcaption>
+                                </figure>
+                                <h2>"Use case description"</h2>
+                                <p>Use cases should be described. The description can be captured using text. It is
+                                    called "Use case description". <br>
+                                    - Use case description provide further details for design</p>
+                                <h3>Example of an use case description</h3>
+                                <table>
+                                    <caption>Figure 8.3 - Use Case Description for Track Order Process</caption>
+                                    <tr>
+                                        <th>USE CASE</th>
+                                        <td>Track Order</td>
+                                    </tr>
+                                    <tr>
+                                        <th>GOAL DESCRIPTION</th>
+                                        <td>To allow customers to track their order status and delivery in real-time
+                                            after placing and paid for their orders.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ACTORS</th>
+                                        <td>Customers</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ASSUMPTIONS</th>
+                                        <td>Customers have successfully paid for their order</td>
+                                    </tr>
+                                    <tr>
+                                        <th>PRECONDITIONS</th>
+                                        <td>The online ordering platform functions normally and the order is logged in
+                                            the system with a unique tracking code</td>
+                                    </tr>
+                                    <tr>
+                                        <th>STEPS</th>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="highlight">Step</td>
+                                                    <td class="highlight">Action</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Customers access the order tracking feature in the app</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Customers enter their order code</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="highlight">3</td>
+                                                    <td class="highlight">System checks for the code validity</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="highlight">4</td>
+                                                    <td class="highlight">System shows the status of the order</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>VARIATIONS</th>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="highlight">Step</td>
+                                                    <td class="highlight">Branching Action</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.1</td>
+                                                    <td>If the code is invalid, the system notifies the customer.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.2</td>
+                                                    <td>System prompts customer to reenter their order code</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.1</td>
+                                                    <td>If the order is already on its way, system displays an
+                                                        interactive map showing the deliveryman position and route</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.2</td>
+                                                    <td>System notifies customers on any real-time update from the
+                                                        deliveryman via message</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>ISSUES</th>
+                                        <td>Systematic error can lead to the app unable to retrieve real-time location
+                                            of the order</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DATE CREATED</th>
+                                        <td>01/12/2023</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="week9" class="part section-block-content">
+                                <h1>Week nine</h1>
+                                <span>(Vietnamese: Tuần 9)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Explain what interface is and why it is important. <br>
+                                    - Design more effective user interfaces by following guidelines given. <br>
+                                    - Practice usability evaluation of prototypes to uncover significant usability
+                                    problems and suggest ways to improve.</p>
+                                <h2>"User interface and its importance</h2>
+                                <h3>User interface</h3>
+                                <p>A method by which users interact with information system. (The "look and feel" of an
+                                    application or system, the portion that determines hwo the user interacts with the
+                                    system) <br> <br>
+                                    The primary foal of a user interface is to help interface designer s to create
+                                    applications that increase user effectiveness and satisfaction.</p>
+                                <h3>The importance of user interface</h3>
+                                <p> - Efficiency and Productivity <br>
+                                    - Health and Safety <br><br>
+                                    Human-Computer Interaction (HCI) isa bout designing computer systems that support
+                                    people so that they can carry out their task productively and safely.</p>
+                                <h3>Interaction methods and devices</h3>
+                                <p>The two basic elements of all human-computer interfaces are: <br>
+                                    - Interaction methods/styles <br>
+                                    - Hardware devices <br><br>
+                                    When designing user interfaces, the most fundamental decision relates to the
+                                    methods used to interact with the system. Consideration the goes to the use of
+                                    hardware devices that support the interaction.</p>
+
+                                <h3>Interaction methods/style</h3>
+                                <figure>
+                                    <figcaption>Fig 9.1 - Graphic User Interface.</figcaption>
+                                    <img src="images/gui.png" alt="gui">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.2 - Command Line Interface..</figcaption>
+                                    <img src="images/command-line-interface.jpg" alt="command-line-interface">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.3 - Form Interface.</figcaption>
+                                    <img style="border: #e1e1e1 solid 1px;" src="images/form-interaction.jpg"
+                                        alt="form">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.4 - Menu Interface.</figcaption>
+                                    <img src="images/menu.webp" alt="menu">
+                                </figure>
+
+                                <h3 style="margin-top: 20px;">Hardware devices</h3>
+                                <figure>
+                                    <figcaption>Fig 9.5 - Touch Screen</figcaption>
+                                    <img src="images/touch-screen.jpg" alt="Apple Studio Display XDR">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.6 - Mouse</figcaption>
+                                    <img src="images/mouse.jpg" alt="Apple Magic Mouse">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.7 - Keyboard</figcaption>
+                                    <img src="images/keyboard.jpg" alt="Apple Magic Keyboard">
+                                </figure>
+                                <h2>"Usability and the interface design evaluation"</h2>
+                                <h3>Usability</h3>
+                                <p>Usability is the analysis of how well a system's ability to support the user's
+                                    activities or tasks. (i.e is the program/system doing the task in the best way
+                                    possible?) <br>
+                                    - Usability is concerned with making systems safe, easy to learn and easy to use.
+                                    <br>
+                                    - Usability is about creating effective user interfaces.
+                                </p>
+                                <h3>Usability Factors</h3>
+                                <table>
+                                    <tr>
+                                        <td>Speed of performance</td>
+                                        <td>How efficient is the system</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rate of errors</td>
+                                        <td>How many mistakes are made by users while performing tasks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Time to learn</td>
+                                        <td>How easy/How much work is needed to learn the system</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Retention over time</td>
+                                        <td>How easy to remember the learnt skills</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Conform to user requirements</td>
+                                        <td>How pleased the users are with the systems</td>
+                                    </tr>
+                                </table>
+                                <h2>"Interface design"</h2>
+                                <p>Interface design prototype: <br>
+                                    - Design 3 screens:</p>
+                                <figure>
+                                    <figcaption>Fig 9.8 - Main Menu Interface.</figcaption>
+                                    <img src="images/home1.png" alt="Main Menu">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.9 - Input Screen Interface</figcaption>
+                                    <img src="images/input1.png" alt="Input Screen">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.10 - Output Screen Interface</figcaption>
+                                    <img src="images/output1.png" alt="Output Screen">
+                                </figure>
+                            </div>
+                            <div id="week10" class="part section-block-content">
+                                <h1>Week ten</h1>
+                                <span>(Vietnamese: Tuần 10)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - What is ethics <br>
+                                    - Discuss the relationship between ethics and information systems. <br>
+                                    - Discuss codes of ethics and its relationship with ethical decision-making. <br>
+                                    - Describe emerging ethical issues in the information age.</p>
+                                <h2>"What is Ethics and the relationship with the Information Systems"</h2>
+                                <p>You use technology and information to gain a competitive advantage in the marketplace
+                                    for organisations - you must also consider your <strong>social
+                                        responsibilities</strong>. This is where Ethics become important!</p>
+                                <h3>What is Ethics?</h3>
+                                <p>The principles and standards that guid our behaviour toward other people.</p>
+                                <h3>The relationship between ethics and the information system</h3>
+                                <table>
+                                    <tr>
+                                        <th>Ethical</th>
+                                        <td>Developing the recruitment software to select particular candidates for an
+                                            interview</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Unethical</th>
+                                        <td>Copying software you purchase, making copies for your friends</td>
+                                    </tr>
+                                </table>
+                                <h3>Ethics and Law</h3>
+                                <figure>
+                                    <figcaption>Fig 10.1 - Ethics and Law chart.</figcaption>
+                                    <img src="images/ethics-and-law.png" alt="Ethics and Law">
+                                </figure>
+                                <h4>Acting ethically and acting legally are not necessarily the same thing.</h4>
+                                <h3>Examples of Ethics and Law</h3>
+                                <table>
+                                    <tr>
+                                        <th>Ethical &amp; Legal</th>
+                                        <td>Purchase the licensed software.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ethical but Illegal</th>
+                                        <td>Hacking into the military database to get the information about the crime
+                                            during the war.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Unethical but Legal</th>
+                                        <td>Building the blog to encourage the hate speech</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Unethical &amp; Illegal</th>
+                                        <td>Sell copied software on the internet</td>
+                                    </tr>
+                                </table>
+                                <h2>"ACS Code of Ethics"</h2>
+                                <p>The ACS Code of Ethics are part of the ACS Constitution. As an ACS member you must
+                                    uphold and advance the honour, dignity and effectiveness of being a professional.
+                                    This entails, in addition to being a good citizen and actin within the law, your
+                                    adherence to the following Society values:</p>
+                                <table>
+                                    <tr>
+                                        <td>==1==</td>
+                                        <td>The Primacy of the Public interest</td>
+                                        <td>You will place the interests of the public above those of personal, business
+                                            or sectional interests.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>==2==</td>
+                                        <td>The Enhancement of Quality of Life</td>
+                                        <td>You will strive to enhance the quality of life of those affected by your
+                                            work.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>==3==</td>
+                                        <td>Honesty</td>
+                                        <td>You will be honest in your representation of skills, knowledge, services and
+                                            products.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>==4==</td>
+                                        <td>Competence</td>
+                                        <td>You will work competently and diligently for your stakeholders.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>==5==</td>
+                                        <td>Professional Development</td>
+                                        <td>You will enhance your own professional development, and that of your
+                                            colleagues and staff.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>==6==</td>
+                                        <td>Professionalism</td>
+                                        <td>You will enhance the integrity of the Society and the respect of its members
+                                            for each other.</td>
+                                    </tr>
+                                </table>
+                                <h4>This Code of Ethics applies to all ACS members regardless of their role or specific
+                                    area of expertise in the ICT industry.</h4>
+                                <embed src="embeds/acs-code-of-professional-conduct.pdf" type="pdf">
+                            </div>
+                            <div id="week11" class="part section-block-content">
+                                <h1>Week eleven</h1>
+                                <span>(Vietnamese: Tuần 11)</span>
+                                <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Define use cases <br>
+                                    - Prepare effective use cases <br>
+                                    - Demonstrate knowledge through practical examples.</p>
                             </div>
                         </div>
                     </div>
