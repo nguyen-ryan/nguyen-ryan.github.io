@@ -95,7 +95,6 @@ header {
 .expert-system {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
 }
 
 .expert-system table {
@@ -105,7 +104,6 @@ header {
 .expert-system figure {
     flex: 2;
 }
-
 
 
 .app-root {
@@ -618,4 +616,13 @@ video {
         scroll-snap-align: start;
         display: block ruby;
     }
+
+    .sticky-item a::after {
+        display: none;
+    }
+
+    .sticky-item a:hover::after {
+        display: none;
+    }
+
 }
