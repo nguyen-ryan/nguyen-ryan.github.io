@@ -785,21 +785,271 @@
                                 <h1>Week eight</h1>
                                 <span>(Vietnamese: Tuần 8)</span>
                                 <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Define use cases <br>
+                                    - Prepare effective use cases <br>
+                                    - Demonstrate knowledge through practical examples.</p>
+                                <h2>"Use cases and the benefits"</h2>
+                                <p>A use case describes what a system does from user's perspectives.</p>
+                                <h3>Benefits of use cases</h3>
+                                <p> - capture requirements from users's perspective. <br>
+                                    - Give a clear and consistent description of what the system should do. <br>
+                                    - Comprehensible by all stakeholders. <br>
+                                    - Serve as a critical tool in the analysis, design, implementation and testing
+                                    process.</p>
+                                <h3>Use cases description</h3>
+                                <p>The set of use case description specifies the complete functional requirements of a
+                                    system. <br>
+                                    - Things to take note: <br>
+                                    + Use cases are requirements - but not all of the requirements. <br>
+                                    + Use cases are not easy to draw and write - but there are techniques to make your
+                                    job easy.
+                                </p>
+                                <h2>"Use case diagram"</h2>
+                                <h3>Use case model</h3>
+                                <p> A use case model consists of four major elements: <br>
+                                    - <strong>System:</strong> the system described. <br>
+                                    - <strong>Actors:</strong> entities that the system interacts with. <br>
+                                    - <strong>Use cases:</strong> services that the system performs. <br>
+                                    - <strong>Relationships:</strong> relationships with other elements.</p>
+                                <h3>Actors</h3>
+                                <p> - Are entities which interact with the system. <br>
+                                    - An actor can carry out many different operations.</p>
+                                <h3>Use cases</h3>
+                                <p> - Each operation or task is a separate use case. <br>
+                                    - Participate in relationship with other use cases.</p>
+                                <h3>Graphical Notation - Use Case</h3>
+                                <figure>
+                                    <img src="images/use-case-annotation.png" alt="Use Case Annotation">
+                                    <figcaption>Fig 8.1 - Use Case Annotations.</figcaption>
+                                </figure>
+                                <h3 style="margin-top: 20px;">Example</h3>
+                                <figure>
+                                    <img src="images/use-case-diagram.png" alt="Use case diagram">
+                                    <figcaption>Fig 8.2 - An example of a Use Case Diagram</figcaption>
+                                </figure>
+                                <h2>"Use case description"</h2>
+                                <p>Use cases should be described. The description can be captured using text. It is
+                                    called "Use case description". <br>
+                                    - Use case description provide further details for design</p>
+                                <h3>Example of an use case description</h3>
+                                <table>
+                                    <caption>Figure 8.3 - Use Case Description for Track Order Process</caption>
+                                    <tr>
+                                        <th>USE CASE</th>
+                                        <td>Track Order</td>
+                                    </tr>
+                                    <tr>
+                                        <th>GOAL DESCRIPTION</th>
+                                        <td>To allow customers to track their order status and delivery in real-time
+                                            after placing and paid for their orders.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ACTORS</th>
+                                        <td>Customers</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ASSUMPTIONS</th>
+                                        <td>Customers have successfully paid for their order</td>
+                                    </tr>
+                                    <tr>
+                                        <th>PRECONDITIONS</th>
+                                        <td>The online ordering platform functions normally and the order is logged in
+                                            the system with a unique tracking code</td>
+                                    </tr>
+                                    <tr>
+                                        <th>STEPS</th>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="highlight">Step</td>
+                                                    <td class="highlight">Action</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Customers access the order tracking feature in the app</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Customers enter their order code</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="highlight">3</td>
+                                                    <td class="highlight">System checks for the code validity</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="highlight">4</td>
+                                                    <td class="highlight">System shows the status of the order</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>VARIATIONS</th>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="highlight">Step</td>
+                                                    <td class="highlight">Branching Action</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.1</td>
+                                                    <td>If the code is invalid, the system notifies the customer.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.2</td>
+                                                    <td>System prompts customer to reenter their order code</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.1</td>
+                                                    <td>If the order is already on its way, system displays an
+                                                        interactive map showing the deliveryman position and route</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.2</td>
+                                                    <td>System notifies customers on any real-time update from the
+                                                        deliveryman via message</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>ISSUES</th>
+                                        <td>Systematic error can lead to the app unable to retrieve real-time location
+                                            of the order</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DATE CREATED</th>
+                                        <td>01/12/2023</td>
+                                    </tr>
+                                </table>
                             </div>
                             <div id="week9" class="part section-block-content">
                                 <h1>Week nine</h1>
                                 <span>(Vietnamese: Tuần 9)</span>
                                 <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Explain what interface is and why it is important. <br>
+                                    - Design more effective user interfaces by following guidelines given. <br>
+                                    - Practice usability evaluation of prototypes to uncover significant usability
+                                    problems and suggest ways to improve.</p>
+                                <h2>"User interface and its importance</h2>
+                                <h3>User interface</h3>
+                                <p>A method by which users interact with information system. (The "look and feel" of an
+                                    application or system, the portion that determines hwo the user interacts with the
+                                    system) <br> <br>
+                                    The primary foal of a user interface is to help interface designer s to create
+                                    applications that increase user effectiveness and satisfaction.</p>
+                                <h3>The importance of user interface</h3>
+                                <p> - Efficiency and Productivity <br>
+                                    - Health and Safety <br><br>
+                                    Human-Computer Interaction (HCI) isa bout designing computer systems that support
+                                    people so that they can carry out their task productively and safely.</p>
+                                <h3>Interaction methods and devices</h3>
+                                <p>The two basic elements of all human-computer interfaces are: <br>
+                                    - Interaction methods/styles <br>
+                                    - Hardware devices <br><br>
+                                    When designing user interfaces, the most fundamental decision relates to the
+                                    methods used to interact with the system. Consideration the goes to the use of
+                                    hardware devices that support the interaction.</p>
+
+                                <h3>Interaction methods/style</h3>
+                                <figure>
+                                    <figcaption>Fig 9.1 - Graphic User Interface.</figcaption>
+                                    <img src="images/gui.png" alt="gui">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.2 - Command Line Interface..</figcaption>
+                                    <img src="images/command-line-interface.jpg" alt="command-line-interface">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.3 - Form Interface.</figcaption>
+                                    <img style="border: #e1e1e1 solid 1px;" src="images/form-interaction.jpg"
+                                        alt="form">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.4 - Menu Interface.</figcaption>
+                                    <img src="images/menu.webp" alt="menu">
+                                </figure>
+
+                                <h3 style="margin-top: 20px;">Hardware devices</h3>
+                                <figure>
+                                    <figcaption>Fig 9.5 - Touch Screen</figcaption>
+                                    <img src="images/touch-screen.jpg" alt="Apple Studio Display XDR">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.6 - Mouse</figcaption>
+                                    <img src="images/mouse.jpg" alt="Apple Magic Mouse">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.7 - Keyboard</figcaption>
+                                    <img src="images/keyboard.jpg" alt="Apple Magic Keyboard">
+                                </figure>
+                                <h2>"Usability and the interface design evaluation"</h2>
+                                <h3>Usability</h3>
+                                <p>Usability is the analysis of how well a system's ability to support the user's
+                                    activities or tasks. (i.e is the program/system doing the task in the best way
+                                    possible?) <br>
+                                    - Usability is concerned with making systems safe, easy to learn and easy to use.
+                                    <br>
+                                    - Usability is about creating effective user interfaces.
+                                </p>
+                                <h3>Usability Factors</h3>
+                                <table>
+                                    <tr>
+                                        <td>Speed of performance</td>
+                                        <td>How efficient is the system</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rate of errors</td>
+                                        <td>How many mistakes are made by users while performing tasks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Time to learn</td>
+                                        <td>How easy/How much work is needed to learn the system</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Retention over time</td>
+                                        <td>How easy to remember the learnt skills</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Conform to user requirements</td>
+                                        <td>How pleased the users are with the systems</td>
+                                    </tr>
+                                </table>
+                                <h2>"Interface design"</h2>
+                                <p>Interface design prototype: <br>
+                                    - Design 3 screens:</p>
+                                <figure>
+                                    <figcaption>Fig 9.8 - Main Menu Interface.</figcaption>
+                                    <img src="images/home1.png" alt="Main Menu">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.9 - Input Screen Interface</figcaption>
+                                    <img src="images/input1.png" alt="Input Screen">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig 9.10 - Output Screen Interface</figcaption>
+                                    <img src="images/output1.png" alt="Output Screen">
+                                </figure>
                             </div>
                             <div id="week10" class="part section-block-content">
                                 <h1>Week ten</h1>
                                 <span>(Vietnamese: Tuần 10)</span>
                                 <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Define use cases <br>
+                                    - Prepare effective use cases <br>
+                                    - Demonstrate knowledge through practical examples.</p>
                             </div>
                             <div id="week11" class="part section-block-content">
                                 <h1>Week eleven</h1>
                                 <span>(Vietnamese: Tuần 11)</span>
                                 <h2>"Overview"</h2>
+                                <h3>Goals</h3>
+                                <p> - Define use cases <br>
+                                    - Prepare effective use cases <br>
+                                    - Demonstrate knowledge through practical examples.</p>
                             </div>
                         </div>
                     </div>
