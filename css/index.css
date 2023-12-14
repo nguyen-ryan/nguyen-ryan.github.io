@@ -38,16 +38,17 @@ header {
     position: sticky;
     top: 0;
     background-color: #fff;
-    padding-bottom: 20px;
 }
 
 .sticky-nav-root .container {
-    width: 100%
+    width: 100%;
 }
 
 .sticky-nav {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sticky-item {
@@ -76,21 +77,17 @@ header {
     content: '';
     display: block;
     height: 2px;
-    /* Thickness of the bottom border */
     background-color: #920000;
-    /* Color of the bottom border */
     width: 0;
     transition: all 0.3s ease;
     position: absolute;
     bottom: 0;
-    /* Positioning the border right below the link */
     left: 50%;
     transform: translateX(-50%);
 }
 
 .sticky-item a:hover::after {
     width: 100%;
-    /* Full width on hover */
     left: 0;
     transform: translateX(0%);
 }
@@ -511,7 +508,7 @@ video {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .section-block-content figure {
@@ -532,7 +529,6 @@ video {
     }
 
     .header-wrapper,
-    .sticky-nav,
     .expert-system {
         flex-direction: column;
     }
@@ -590,7 +586,36 @@ video {
         flex-direction: column;
     }
 
-    figcaption {
-        font-size: 10px;
+    .section-block-content figure {
+        figcaption {
+            font-size: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    #nav-bar {
+        overflow: auto;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        width: 90%;
+    }
+
+    .sticky-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .sticky-item {
+        scroll-snap-align: start;
+        display: block ruby;
     }
 }
