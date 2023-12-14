@@ -56,13 +56,42 @@ header {
 
 .sticky-item a {
     text-decoration: none;
-    transition: color 0.1s ease, border 0.1s ease;
     position: relative;
+    display: inline-block;
 
 }
 
 .sticky-item a:link {
     color: #000;
+}
+
+
+.sticky-item a:visited {
+    color: #555;
+}
+
+
+.sticky-item a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    /* Thickness of the bottom border */
+    background-color: #920000;
+    /* Color of the bottom border */
+    width: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    /* Positioning the border right below the link */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sticky-item a:hover::after {
+    width: 100%;
+    /* Full width on hover */
+    left: 0;
+    transform: translateX(0%);
 }
 
 .expert-system {
@@ -79,26 +108,6 @@ header {
     flex: 2;
 }
 
-
-.sticky-item a:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: #920000;
-    transition: width 0.1s ease;
-}
-
-.sticky-item a:hover:after {
-    width: 100%;
-}
-
-.sticky-item a:visited {
-    color: #555;
-}
 
 
 .app-root {
